@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h3 {
+  font-size: 3.2rem;
+  margin-bottom: .4rem;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.gallery-list li {
+  position: relative;
+  flex: 0 1 33.5rem;
+}
+
+.gallery-list li img {
+  position: relative;
+  z-index: 1;
+}
+
+.paint-info {
+  position: absolute;
+  z-index: 2;
+  margin: 0 2.4rem 4rem 2.4rem;
+  bottom: 0;
+}
+
+
+@media (max-width: 674px) {
+  .gallery-list {
+    gap: 0;
+  }
+}
